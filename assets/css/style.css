@@ -3,15 +3,15 @@
     padding    : 0;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
-body {
-    width     : 100%;
+html, body {
+    width: 100%;
     height    : 100vh;
-    overflow-y: scroll;
 }
 
-
+/* Overall */
 .first-section,
 .footer {
     width           : 100%;
@@ -29,11 +29,13 @@ body {
 .navbar,
 .header,
 .second-section,
-.second-section .images {
+.second-section .images,
+.second-section .image-text{
     display        : flex;
     margin         : 0 auto;
     width          : 80%;
 }
+
 /* Navbar */
 .navbar {
     justify-content: space-between;
@@ -94,7 +96,7 @@ body {
     color: white;
     font-size: 16px;
     font-weight: 600;
-    padding: 10px 17px;
+    padding: 10px 20px;
     border-radius: 10px;
     border: none;
 }
@@ -104,7 +106,7 @@ body {
     height: 300px;
 }
 
-/* second section */
+/* Second section */
 .second-section{
     flex-direction: column;
     align-content: space-around;
@@ -123,9 +125,11 @@ body {
 .second-section .images{
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .second-section .image-text{
+    flex-direction: column;
     width: 200px;
     padding: 20px;
 }
@@ -142,9 +146,62 @@ body {
     text-align: center;
 }
 
+/* Third section */
+.third-section{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+}
+
+.third-section #quote{
+    width: 80%;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: light;
+}
+
+.third-section #quote-author{
+    width: 80%;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Fourth section */
+.fourth-section{
+    width: 70%;
+    margin: 70px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.area-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.area-around .text h4,
+.area-around .text p{
+    color: #fff;
+}
+
+.area-around .text h4{
+    font-size: 25px;
+}
+
+.area-around button{
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: #fff;
+    padding: 5px 30px;
+}
+
 /* Footer */
 .footer {
-    padding        : 25px;
+    padding        : 35px;
     display        : flex;
     align-items    : center;
     justify-content: space-around;
